@@ -1,0 +1,188 @@
+/*global*/
+
+.container h1{
+    line-height: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 200%;
+    background: aliceblue;
+    margin: 0%;
+    text-align: center;
+}
+
+ul{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.buttons{
+    background: #e8491d;
+    color: #ffffff;
+    padding: 0 1em;
+    border: none;
+    height: 2em;
+    font-size: 80%;
+}
+
+/*header*/
+
+header{
+    align-content: center;
+    background: #35424a;
+    color: #ffffff;
+    min-height: 5em;
+    padding-top: 1em;
+    border-bottom:  #e8491d 0.3em solid;
+}
+
+header a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header h1{
+    padding-top:0;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 1.2em;
+}
+
+.branding{
+    padding: 0%;
+    float: left;
+}
+
+.navbar{
+    padding: 1.2em 0em;
+    float: right;
+}
+
+.highlight, header .current a{
+    color: #e8491d;
+    font-weight: bold;    
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/*showcase*/
+
+.showcase{
+    min-height: 20em;
+    background: url(../images/showcase.jpg) no-repeat center center;
+    text-align: center;
+    color: #ffffff;
+}
+.showcase h1{
+    margin: 1.5em 0 1em 0;
+    font-size: 280%;
+}
+
+.showcase p{
+    font-size: 150%;
+}
+
+/*subscribe*/
+
+.subscribe{
+    padding: 1em;
+    background: #35424a;
+    color: #ffffff;
+}
+
+.subscribe h1{
+    margin: 0.8em 0 0 0;
+    padding: 0%;
+    float: left;
+}
+
+.subscribe form{
+    margin-top: 1em;
+    padding: 0%;
+    float: right;
+}
+
+.subscribe input[type="email"]{
+    padding: 1%;
+    height: 2em;
+    width: 20em;
+}
+
+/*boxes*/
+
+.box{
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 30%;
+    padding: 0.5em;   
+}
+
+.box img{
+    width: 5em;
+}
+
+footer{
+    background: #e8491d;
+    margin: 0em;
+    padding: 0.5em;
+    color: #ffffff;
+}
+
+@media(max-width: 50em){
+    .box{
+        width: 100%;
+        float: none;
+    }
+
+    .branding{
+        text-align: center;
+        width: 100%;
+        float: none;  
+        margin-bottom: 0.5em; 
+    }
+
+    header .navbar,
+    header .navbar li{
+        text-align: center;
+        width: 100%;
+        float: none;
+    }
+
+    .subscribe{
+        text-align: center;
+    }
+
+    .subscribe h1{
+        text-align: center;
+        width: 100%;
+        float: none;
+    }
+
+    .subscribe form input[type= "email"]{
+        display: block;
+        width: 100%;
+        float: none;
+    }
+
+    .subscribe button,
+    .subscribe form{
+        width: 100%;
+        float: none;
+        display: block;
+    }
+}
